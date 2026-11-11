@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин Скинов</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  
+  <script src="js/main.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jura:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body class="index">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <div class="site-header__logo-container">
+        <h2 class="site-header__logo-text font-headline" href="index.html">Pro Store 2002</h2>
+        <img src="images/logo-icon-wolf.svg" alt="" class="site-header__logo-icon">
+      </div>
+
+      <a class="site-hamburger" aria-label="Открыть Панель" role="button">
+        <span class="charm--menu-hamburger"></span>
+      </a>
+
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--active" href="index.html">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="contacts.html">Контакты</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#popular">Популярные товары</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="video-container">
+    <video class="video-container__video" autoplay muted loop id="bgVideo">
+      <source src="videos/csgo surf.mp4" type="video/mp4">
+    </video>
+    <div class="video-container__overlay"></div>
+  </div>
+
+  <main>
+    <section class="viewport-container">
+      <section class="hero">
+        <div class="hero__container">
+          <div class="hero__description">
+            <h1 class="font-headline">МАГАЗИН СКИНОВ</h1>
+            <a class="button hero__description-button" href="#popular">Перейти к товарам</a>
+            <p>
+              Это стартовая страница учебного frontend-проекта.
+              В дальнейшем на её основе будет разработан многостраничный сайт
+              интернет-магазина скинов.<br>
+              На выбор самые красивые и редкие скины для вашего положительного геймплея.
+            </p>
+          </div>
+          
+          <picture>
+            <source media="(min-width: 1200px)" srcset="images/hero-desktop.png">
+            <source media="(min-width: 768px)" srcset="images/hero-tablet.png">
+            <img
+              src="images/hero-mobile.png"
+              alt="Каталог учебных товаров"
+              width="296"
+              height="248"
+              class="hero__image"
+            >
+          </picture>
+        </div>
+        
+      </section>
+      <section class="section advantages" id="advantages">
+        <h2 class="text-centered advantages__title font-headline">Преимущества нашего магазина</h2>
+  
+        <div class="advantages__list">
+          <div class="advantage-container">
+            <img src="images/advantages/shirt.png" alt="" class="advantage-image">
+            <p>Красивые скины</p>
+          </div>
+          <div class="advantage-container">
+            <img src="images/advantages/shirt.png" alt="" class="advantage-image">
+            <p>Редкие скины</p>
+          </div>
+          <div class="advantage-container">
+            <img src="images/advantages/shirt.png" alt="" class="advantage-image">
+            <p>Вкусные скины</p>
+          </div>
+          <div class="advantage-container">
+            <img src="images/advantages/shirt.png" alt="" class="advantage-image">
+            <p>Хорошие скины</p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="section" id="popular">
+      <h2 class="text-centered font-headline">Популярные товары</h2>
+
+      <div class="products-grid">
+        <article class="product-card product-card--featured">
+          <img 
+            src="images/products/steve.png" 
+            srcset="images/products/steve-480.png 480w,
+                    images/products/steve-640.png 640w,
+                    images/products/steve-960.png 960w"
+            sizes="(max-width: 639px) 100vw,
+                  (max-width: 1023px) 50vw,
+                  33vw"
+            alt="Товар 1"
+            width="640"
+            height="640"
+            loading="lazy"
+            class="product-card__image"
+          >
+          <div class="product-card__inner">
+            <h3 class="product-card__title">
+              <a class="product-card__title-link" href="product.html">Майнкрафт скин. Крутой</a>
+            </h3>
+            <p class="product-card__description">Если ты считаешь, что ты самый крутой копатель, то носи этот скин с гордостью. Ты точно поймаешь алмазик, нося этот скин.</p>
+            <div class="product-card__bottom">
+              <button
+                class="button product-card__button"
+                type="button"
+                data-product="Товар 1"
+              >
+                Купить
+              </button>
+              <h3 class="product-card__price">1000₽</h3>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img 
+            src="images/products/cs.png" 
+            srcset="images/products/cs-480.png 480w,
+                    images/products/cs-640.png 640w,
+                    images/products/cs-960.png 960w"
+            sizes="(max-width: 639px) 100vw,
+                  (max-width: 1023px) 50vw,
+                  33vw"
+            alt="Товар 2"
+            width="640"
+            height="640"
+            loading="lazy"
+            class="product-card__image"
+          >
+          <div class="product-card__inner">
+            <h3 class="product-card__title">
+              <a class="product-card__title-link" href="product.html">кс Скин</a>
+            </h3>
+            <p class="product-card__description">Мой друг Эркин Трофимович Неустроенный украл мою шоколадку Стёп во втором классе. Каждый раз, когда вижу его, мой кулак сжимается, а глаза расшираются в ужасе.</p>
+            <div class="product-card__bottom">
+              <button
+                class="button product-card__button"
+                type="button"
+                data-product="Товар 2"
+              >
+                Купить
+              </button>
+              <h3 class="product-card__price">1500₽</h3>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img 
+            src="images/products/rb.png" 
+            srrbet="images/products/rb-480.png 480w,
+                    images/products/rb-640.png 640w,
+                    images/products/rb-960.png 960w"
+            sizes="(max-width: 639px) 100vw,
+                  (max-width: 1023px) 50vw,
+                  33vw"
+            alt="Товар 3"
+            width="640"
+            height="640"
+            loading="lazy"
+            class="product-card__image"
+          >
+          <div class="product-card__inner">
+            <h3 class="product-card__title">
+              <a class="product-card__title-link" href="product.html">Роблос Аватария</a>
+            </h3>
+            <p class="product-card__description">Если мама не даёт купить робуксы, то купите этот аватар у нас. Мы ещё раздаём вкусные конфетки и мы лично приедем к вам на фургоне.</p>
+            <div class="product-card__bottom">
+              <button
+                class="button product-card__button"
+                type="button"
+                data-product="Товар 3"
+              >
+                Купить
+              </button>
+              <h3 class="product-card__price">2000₽</h3>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <aside class="aside-info">
+      <h2 class="font-headline">СТУДЕНТЫ, читайте</h2>
+      <p>
+        Загрузите свой студенческий билет в профиль и вы получите 2% скидку на все товары из компьютерной игры Роблоксия.
+      </p>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Учебный проект. Все права защищены.</p>
+    <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+  </footer>
+
+  <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
+    <h2 class="order-dialog__title" id="order-dialog-title">Оформление заявки</h2>
+
+    <form class="order-form" id="order-form" action="#" method="post" novalidate>
+      <input id="selected-product" name="selected-product" type="hidden">
+
+      <div class="order-form__field">
+        <label class="order-form__label" for=""order-name>Имя</label>
+        <input
+          class="order-form__input"
+          id="order-name"
+          name="name"
+          type="text"
+          placeholder="Введите ваше имя"
+          minlength="2"
+          autocomplete="given-name"
+          required
+        >
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-email">E-mail</label>
+        <input
+          class="order-form__input"
+          id="order-email"
+          name="email"
+          type="email"
+          placeholder="example@mail.ru"
+          autocomplete="email"
+          required
+        >
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-phone">Телефон</label>
+        <input
+          class="order-form__input"
+          id="order-phone"
+          name="phone"
+          type="tel"
+          inputmode="tel"
+          placeholder="+7 (900) 000-00-00"
+          pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$"
+          required
+        >
+        <small>Формат: +7 (900) 000-00-00</small>
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-date">Дата связи</label>
+        <input
+          class="order-form__input"
+          id="order-date"
+          name="date"
+          type="date"
+        >
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-topic">Тема заявки</label>
+        <select id="order-topic" name="topic" required>
+          <option value="">Выберите тему</option>
+          <option value="product">Заказ товара</option>
+          <option value="consultation">Консультация</option>
+          <option value="delivery">Доставка</option>
+        </select>
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-comment">Комментарий</label>
+        <textarea
+          class="order-form__input"
+          id="order-comment"
+          name="comment"
+          rows="4"
+          placeholder="Укажите дополнительную информацию"
+        ></textarea>
+      </div>
+
+      <div class="order-form__field form-field--checkbox">
+        <label class="order-form__label" for="order-agreement">
+          <input
+            class="order-form__input"
+            id="order-agreement"
+            name="agreement"
+            type="checkbox"
+            required
+          >
+          Я согласен на обработку данных
+        </label>
+      </div>
+
+      <div class="order-form__actions">
+        <button class="button button--secondary" type="button" id="close-order-dialog">
+          Закрыть
+        </button>
+        <button class="button button--primary" type="submit">
+          Отправить заявку
+        </button>
+      </div>
+    </form>
+  </dialog>
+
+  <p class="success-message" id="success-message" hidden>
+    Форма успешно отправлена!
+  </p>
+</body>
+</html>
